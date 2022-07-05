@@ -14,7 +14,7 @@ You can also download a TeX distribution such as:
 
 Either of those distributions will come with the `TeXworks` LaTeX editor.
 
-Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.tex) stays in the same folder as the [Images](Images), [Preamble](Preamble), and [Sections](Sections) folders.
+Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.tex) stays in the same folder as the [Images](Images), [Preamble](Preamble), and [Sections](Sections) folders, otherwise it can't find them.
 
 ## Explanation of each file
 
