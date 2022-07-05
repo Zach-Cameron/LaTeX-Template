@@ -6,7 +6,7 @@ Look at [main.pdf](main.pdf) to see the state of the current build.
 
 ## Getting Started
 
-If you are new to LaTeX, use [Overleaf](www.overleaf.com). You can jump into editing and rendering LaTeX files without setup and your changes are saved automatically. 
+If you are new to LaTeX, use [Overleaf](https://www.overleaf.com/). You can jump into editing and rendering LaTeX files without setup and your changes are saved automatically. 
 
 You can also download a TeX distribution such as:
 * https://miktex.org/
