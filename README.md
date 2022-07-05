@@ -4,21 +4,22 @@ A LaTeX template for keeping notes or journals.
 
 Look at [main.pdf](main.pdf) to see the state of the current build.
 
-Download a TeX distribution such as:
+## Getting Started
+
+If you are new to LaTeX, use [Overleaf](www.overleaf.com) to edit and render LaTeX. 
+
+You can also download a TeX distribution such as:
 * https://miktex.org/
 * https://www.tug.org/texlive/
 
-Either of those distributions will come with the `TeXworks` LaTeX editor. Open [main.tex](main.tex) in `TeXworks`.
+Either of those distributions will come with the `TeXworks` LaTeX editor.
+
+Open [main.tex](main.tex) in your editor of choice.
 
 ## Explanation of each file
 
 [main.tex](main.tex):
 * Sets the [document class](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes) to `article`, font size to 12pt, and paper size to letter, i.e. 8.5" x 11".
-* Writes the text from the [Preamble](Preamble) files into [main.tex](main.tex).
-* Begins a new document.
-* Writes the text from the [Sections](Sections) files into [main.tex](main.tex).
-* Creates the index.
-* Ends the document.
 
 [Preamble/custom_commands.tex](Preamble/custom_commands.tex):
 * Custom commands, usually to establish shorthands.
