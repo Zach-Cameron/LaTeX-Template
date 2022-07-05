@@ -21,13 +21,13 @@ Either of those distributions will come with the `TeXworks` LaTeX editor. Open [
 * Ends the document.
 
 [Preamble/custom_commands.tex](Preamble/custom_commands.tex):
-* For custom commands, usually to establish shorthands.
+* Custom commands, usually to establish shorthands.
 
 [Preamble/custom_settings.tex](Preamble/custom_settings.tex):
-* For custom settings, e.g. whether or not to number sections.
+* Custom settings, e.g. whether or not to number sections.
 
 [Preamble/environments.tex](Preamble/environments.tex):
-* For custom environments of the [ntheorem](https://ctan.org/pkg/ntheorem?lang=en) package.
+* Custom environments of the [ntheorem](https://ctan.org/pkg/ntheorem?lang=en) package.
 
 [Preamble/header_footer.tex](Preamble/header_footer.tex):
 * Header and footer settings for the [fancyhdr](https://ctan.org/pkg/fancyhdr?lang=en) package.
@@ -50,3 +50,9 @@ Either of those distributions will come with the `TeXworks` LaTeX editor. Open [
 * [hyperref](https://www.ctan.org/pkg/hyperref): Used to insert hyperlinks in text.
 * [parskip](https://www.ctan.org/pkg/parskip): Used to improve paragraph rendering.
 * [lipsum](https://www.ctan.org/pkg/lipsum): Used to render lorem-ipsum text, mainly for testing purposes.
+
+[Sections/toc.tex](Sections/toc.tex):
+* Renders the table of contents.
+
+[Sections/Notes.tex](Sections/Notes.tex):
+* 
