@@ -20,6 +20,7 @@ Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.te
 
 [main.tex](main.tex):
 * Sets the [document class](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes) to `article`, font size to 12pt, and paper size to letter, i.e. 8.5" x 11".
+* Begins and ends the document.
 
 [Preamble/custom_commands.tex](Preamble/custom_commands.tex):
 * Custom commands, usually to establish shorthands.
@@ -35,7 +36,7 @@ Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.te
 
 [Preamble/packages.tex](Preamble/packages.tex): 
 * [geometry](https://ctan.org/pkg/geometry?lang=en): Used to set the margin size.
-* [microtype](https://ctan.org/pkg/microtype): Provides a variety of small adjustments to make documents look better.
+* [microtype](https://ctan.org/pkg/microtype): Automatically provides a variety of small adjustments to make documents look better.
 * [graphicx](https://ctan.org/pkg/graphicx): Used for rendering images from the [Images](Images) folder.
 * [mathtools](https://ctan.org/pkg/mathtools): An extension of [amsmath](https://ctan.org/pkg/amsmath), used for typesetting mathematical notation.  
 * [amssymb](https://ctan.org/pkg/amsfonts?lang=en): Provides a variety of mathematical symbols.
