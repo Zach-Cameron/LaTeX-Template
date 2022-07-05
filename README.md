@@ -20,6 +20,7 @@ Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.te
 
 [main.tex](main.tex):
 * Sets the [document class](https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Document_classes) to `article`, font size to 12pt, and paper size to letter, i.e. 8.5" x 11".
+* Begins and ends the document.
 
 [Preamble/custom_commands.tex](Preamble/custom_commands.tex):
 * Custom commands, usually to establish shorthands.
