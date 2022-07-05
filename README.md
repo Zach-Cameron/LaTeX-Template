@@ -56,5 +56,5 @@ Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.te
 [Sections/toc.tex](Sections/toc.tex):
 * Renders the table of contents.
 
-[Sections/Notes.tex](Sections/body.tex):
+[Sections/body.tex](Sections/body.tex):
 * This is where you write your document. 
