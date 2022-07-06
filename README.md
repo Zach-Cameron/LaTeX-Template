@@ -35,13 +35,8 @@ Open [main.tex](main.tex) in your editor of choice. Make sure [main.tex](main.te
 * Header and footer settings for the [fancyhdr](https://ctan.org/pkg/fancyhdr?lang=en) package.
 
 [Preamble/packages.tex](Preamble/packages.tex): 
-<<<<<<< HEAD
 * [geometry](https://ctan.org/pkg/geometry): Used to set the margin size.
 * [microtype](https://ctan.org/pkg/microtype): Automatically provides a variety of small adjustments to make documents look better.
-=======
-* [geometry](https://ctan.org/pkg/geometry?lang=en): Used to set the margin size.
-* [microtype](https://ctan.org/pkg/microtype): Automatically applies a variety of formatting improvements.
->>>>>>> e931a147011922b420855d61958db5e5dc078b52
 * [graphicx](https://ctan.org/pkg/graphicx): Used for rendering images from the [Images](Images) folder.
 * [mathtools](https://ctan.org/pkg/mathtools): An extension of [amsmath](https://ctan.org/pkg/amsmath), used for typesetting mathematical notation.  
 * [amssymb](https://ctan.org/pkg/amsfonts): Provides a variety of mathematical symbols.
