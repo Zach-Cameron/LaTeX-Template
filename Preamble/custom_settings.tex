@@ -1,4 +1,26 @@
-%\setcounter{section}{-1}    % Starts section numbering at 0
-%\setlength{\parindent}{0in}    % Removes indentation
-\setcounter{secnumdepth}{0}    % Removes section numbering but keeps sections in the Table of Contents
-%\setlist{nosep} % enumitem setting: remove vertical spacing in lists
+% Starts section numbering at 0.
+%\setcounter{section}{-1}
+
+% Removes indentation.
+%\setlength{\parindent}{0in}
+
+% Removes section numbering but keeps sections in the Table of Contents.
+%\setcounter{secnumdepth}{0} 
+
+% graphicx: Sets default path for images.
+\graphicspath{{./Images/}}
+
+% enumitem: Remove left margin of lists.
+\setlist{leftmargin=*}
+
+% imakeidx: Keeps fancyhdr settings on Index page.
+\indexsetup{firstpagestyle=fancy}
+
+% imakeidx: Adds the Index to the ToC.
+\makeindex[intoc]
+
+% hyperref settings
+\hypersetup{
+    colorlinks = true,
+    urlcolor = blue
+}

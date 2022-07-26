@@ -1,5 +1,5 @@
 %%%%%%%%%%
-% Defaults 
+% Defaults
 %%%%%%%%%%
 \theoremstyle{plain}
 \theoremheaderfont{\normalfont\bfseries}
@@ -7,105 +7,67 @@
 \theoremseparator{}
 \theorempreskip{\topsep}
 \theorempostskip{\topsep}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{\topsep}
-\theoreminframepostskip{\topsep}
 \theoremindent0cm
 \theoremnumbering{arabic}
-\theoremsymbol{}
+\theoremsymbol{\ensuremath{}}
 
-% theoremstyle predefined options:
-%     plain, break, change, changebreak, 
-%     margin, marginbreak, nonumberplain, nonumberbreak, empty
 
-% theoremnumbering options:
-%     arabic, alph, Alph, roman, Roman, greek, Greek, fnsymbol
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Theorem-style environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{break}
-\theoremheaderfont{\normalfont\bfseries}
-\theorembodyfont{\itshape}
-\theoremseparator{}
-\theorempreskip{2em}
-\theorempostskip{2em}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent0cm
-\theoremnumbering{arabic}
-\theoremsymbol{}
-
-\newframedtheorem{thrm}{Theorem}[section]
-
-\newtheorem{coro}{Corollary}[thrm]
-\newtheorem{lemm}[thrm]{Lemma}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Theorem-style (unnumbered) environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%
+% Theorem
+%%%%%%%%%
 \theoremstyle{nonumberbreak}
-\theoremheaderfont{\normalfont\bfseries}
+\theoremheaderfont{\kern-1.5em\normalfont\bfseries}
 \theorembodyfont{\itshape}
 \theoremseparator{}
-\theorempreskip{2em}
-\theorempostskip{2em}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent0cm
+\theorempreskip{1.5em}
+\theorempostskip{\topsep}
+\theoremindent1.5em
 \theoremnumbering{arabic}
-\theoremsymbol{}
+\theoremsymbol{\ensuremath{}}
 
 \newtheorem{prop}{Proposition}
 \newtheorem{conj}{Conjecture}
 \newtheorem{crit}{Criterion}
 \newtheorem{asrt}{Assertion}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Definition-style environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+% Theorem Numbered
+%%%%%%%%%%%%%%%%%%
 \theoremstyle{break}
-\theoremheaderfont{\normalfont\bfseries}
-\theorembodyfont{}
+\theoremheaderfont{\kern-1.5em\normalfont\bfseries}
+\theorembodyfont{\itshape}
 \theoremseparator{}
-\theorempreskip{\topsep}
+\theorempreskip{1.5em}
 \theorempostskip{\topsep}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent0cm
+\theoremindent1.5em
 \theoremnumbering{arabic}
-\theoremsymbol{}
+\theoremsymbol{\ensuremath{}}
 
-\newtheorem{exrc}{Exercise}[section]
+\newtheorem{thrm}{Theorem}[section]
+\newtheorem{coro}{Corollary}[thrm]
+\newtheorem{lemm}[thrm]{Lemma}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Definition-style (unnumbered) environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%
+% Definition
+%%%%%%%%%%%%
 \theoremstyle{nonumberbreak}
-\theoremheaderfont{\normalfont\bfseries}
+\theoremheaderfont{\kern-1.5em\normalfont\bfseries}
 \theorembodyfont{}
-\theoremseparator{}
-\theorempreskip{\topsep}
+\theoremseparator{.}
+\theorempreskip{1.5em}
 \theorempostskip{\topsep}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent0cm
+\theoremindent1.5em
 \theoremnumbering{arabic}
-\theoremsymbol{}
+\theoremsymbol{\ensuremath{}}
 
-\newframedtheorem{defn}{Definition}
-
+\newtheorem{defn}{Definition}
 \newtheorem{cond}{Condition}
 \newtheorem{prob}{Problem}
+\newtheorem{exmp}{Example}
+\newtheorem{exrc}{Exercise}
 \newtheorem{algo}{Algorithm}
 \newtheorem{ques}{Question}
 \newtheorem{axio}{Axiom}
@@ -113,66 +75,70 @@
 \newtheorem{asum}{Assumption}
 \newtheorem{hypo}{Hypothesis}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Remark-style environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{plain}
-\theoremheaderfont{\itshape}
+%%%%%%%%%%%%%%%%%%%%%
+% Definition Numbered
+%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{break}
+\theoremheaderfont{\kern-1.5em\normalfont\bfseries}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{1em}
-\theorempostskip{1em}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent\parindent
+\theorempreskip{1.5em}
+\theorempostskip{\topsep}
+\theoremindent1.5em
 \theoremnumbering{arabic}
-\theoremsymbol{}
+\theoremsymbol{\ensuremath{}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Remark-style (unnumbered) environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%
+% Remark
+%%%%%%%%
 \theoremstyle{nonumberplain}
-\theoremheaderfont{\itshape}
+\theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{1em}
-\theorempostskip{1em}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent\parindent
+\theorempreskip{1.5em}
+\theorempostskip{\topsep}
+\theoremindent1.5em
 \theoremnumbering{arabic}
-\theoremsymbol{}
+\theoremsymbol{\ensuremath{}}
 
 \newtheorem{rmrk}{Remark}
 \newtheorem{note}{Note}
 \newtheorem{nota}{Notation}
-\newtheorem{clai}{Claim}
+\newtheorem{clam}{Claim}
 \newtheorem{summ}{Summary}
-\newtheorem{ackn}{Acknowledgment}
+\newtheorem{aknw}{Acknowledgement}
 \newtheorem{case}{Case}
 \newtheorem{conc}{Conclusion}
-\newtheorem{exmp}{Example}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Proof-style environments
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{nonumberplain}
-\theoremheaderfont{\itshape}
+%%%%%%%%%%%%%%%%%
+% Remark Numbered
+%%%%%%%%%%%%%%%%%
+\theoremstyle{plain}
+\theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{2em}
-\theorempostskip{2em}
-\theoremframepreskip{\topsep}
-\theoremframepostskip{\topsep}
-\theoreminframepreskip{0pt}
-\theoreminframepostskip{0pt}
-\theoremindent\parindent
+\theorempreskip{1.5em}
+\theorempostskip{\topsep}
+\theoremindent1.5em
 \theoremnumbering{arabic}
-\theoremsymbol{$\square$}
+\theoremsymbol{\ensuremath{}}
+
+
+
+%%%%%%%
+% Proof
+%%%%%%%
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\kern-1.5em\itshape}
+\theorembodyfont{}
+\theoremseparator{.}
+\theorempreskip{0.5em}
+\theorempostskip{\topsep}
+\theoremindent1.5em
+\theoremnumbering{arabic}
+\theoremsymbol{\ensuremath{\square}}
 
 \newtheorem{proof}{Proof}
 \newtheorem{soln}{Solution}
