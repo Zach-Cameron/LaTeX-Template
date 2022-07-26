@@ -66,8 +66,6 @@
 \newtheorem{defn}{Definition}
 \newtheorem{cond}{Condition}
 \newtheorem{prob}{Problem}
-\newtheorem{exmp}{Example}
-\newtheorem{exrc}{Exercise}
 \newtheorem{algo}{Algorithm}
 \newtheorem{ques}{Question}
 \newtheorem{axio}{Axiom}
@@ -88,12 +86,12 @@
 \theoremnumbering{arabic}
 \theoremsymbol{\ensuremath{}}
 
-
+\newtheorem{exrc}{Exercise}[section]
 
 %%%%%%%%
 % Remark
 %%%%%%%%
-\theoremstyle{nonumberplain}
+\theoremstyle{nonumberbreak}
 \theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
@@ -111,11 +109,12 @@
 \newtheorem{aknw}{Acknowledgement}
 \newtheorem{case}{Case}
 \newtheorem{conc}{Conclusion}
+\newtheorem{exmp}{Example}
 
 %%%%%%%%%%%%%%%%%
 % Remark Numbered
 %%%%%%%%%%%%%%%%%
-\theoremstyle{plain}
+\theoremstyle{break}
 \theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
@@ -130,7 +129,7 @@
 %%%%%%%
 % Proof
 %%%%%%%
-\theoremstyle{nonumberplain}
+\theoremstyle{nonumberbreak}
 \theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
