@@ -1,0 +1,36 @@
+% graphicx: Sets default path for images.
+\graphicspath{{./Images/}}
+
+% Enables dark mode.
+%\enabledarkmode
+
+% hyperref settings
+\hypersetup{
+    colorlinks = true,
+    linkcolor = black,
+    urlcolor = blue
+}
+
+% Draws frames around section numbers.
+% Taken from LaTeX Companion 2nd ed pg 26.
+\makeatletter
+\renewcommand\@seccntformat[1]{\fbox{\csname the#1\endcsname}\hspace{0.5em}}
+\makeatother
+
+% imakeidx: Keeps fancyhdr settings on Index page.
+\indexsetup{firstpagestyle=fancy}
+
+% imakeidx: Adds the Index to the ToC.
+\makeindex[intoc]
+
+% Starts section numbering at 0.
+%\setcounter{section}{-1}
+
+% Removes indentation.
+%\setlength{\parindent}{0in}
+
+% Removes section numbering but keeps sections in the Table of Contents.
+%\setcounter{secnumdepth}{0} 
+
+% enumitem: Remove left margin of lists.
+%\setlist{leftmargin=*}
