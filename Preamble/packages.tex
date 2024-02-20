@@ -5,8 +5,9 @@
 %\usepackage{darkmode}
 % https://ctan.org/pkg/darkmode
 % Usage: Render document in dark mode.
+% See Preamble/custom_settings.tex to enable.
 
-\usepackage[margin=0.618in,includehead,includefoot]{geometry}
+\usepackage[margin=1in,includehead,includefoot]{geometry}
 % https://ctan.org/pkg/geometry
 % Usage: Adjust margin size.
 
@@ -23,7 +24,7 @@
 % Usage: Provide commands to get the current date and time.
 
 \usepackage[parfill]{parskip}
-%https://ctan.org/pkg/parskip
+% https://ctan.org/pkg/parskip
 % Usage: Helps with vertical spacing.
 
 \usepackage{mathtools, amssymb}
@@ -32,14 +33,14 @@
 % https://ctan.org/pkg/amsfonts
 % Usage: Write mathematical expressions and symbols.
 
-\usepackage[ntheorem]{empheq}
-% https://ctan.org/pkg/empheq
-% Usage: Align equations.
-
 \usepackage[framed,amsmath,thmmarks,thref,hyperref]{ntheorem}
 % https://ctan.org/pkg/ntheorem
 % Usage: Define and write theorem-like environments.
 % See Preamble/environments.tex for enviroment definitions.
+
+\usepackage[ntheorem]{empheq}
+% https://ctan.org/pkg/empheq
+% Usage: Align equations.
 
 \usepackage{framed}
 % https://ctan.org/pkg/framed
@@ -68,7 +69,7 @@
 
 \usepackage{tikz}
 % https://www.ctan.org/pkg/pgf
-% Usage: Render graphics.
+% Usage: Render plots.
 
 \usepackage{wrapfig}
 % https://www.ctan.org/pkg/wrapfig
@@ -93,3 +94,7 @@
 % since its job is to redefine many LATEX commands."
 % https://www.ctan.org/pkg/hyperref
 % Usage: Insert hyperlinks in text. Make the TOC entries links.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages to consider adding:
+% siunitx
