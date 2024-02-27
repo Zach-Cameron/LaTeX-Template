@@ -1,8 +1,16 @@
+% 
 % https://mirror.math.princeton.edu/pub/CTAN/macros/latex/required/amscls/doc/amsthdoc.pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The following list summarizes the types of structures which are normally associated with each theorem style:
 % plain: Theorem, Lemma, Corollary, Proposition, Conjecture, Criterion, Assertion
 % definition: Definition, Condition, Problem, Example, Exercise, Algorithm, Question, Axiom, Property, Assumption, Hypothesis
 % remark: Remark, Note, Notation, Claim, Summary, Acknowledgment, Case, Conclusion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These default settings are provided:
+% plain : italic text, extra space above and below;
+% definition : upright text, extra space above and below;
+% remark : upright text, no extra space above or below.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%
 % Default
@@ -25,7 +33,7 @@
 %%%%%%%%%
 % Theorem
 %%%%%%%%%
-\theoremstyle{changebreak}
+\theoremstyle{break}
 \theoremheaderfont{\kern-1.5em\normalfont\bfseries}
 \theorembodyfont{\itshape}
 \theoremseparator{}
@@ -68,11 +76,11 @@
 %%%%%%%%%%%%
 % Definition
 %%%%%%%%%%%%
-\theoremstyle{changebreak}
+\theoremstyle{break}
 \theoremheaderfont{\kern-1.5em\normalfont\bfseries}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{1em}
+\theorempreskip{1.5em}
 \theorempostskip{0em}
 \theoremframepreskip{0.5em}
 \theoremframepostskip{0em}
@@ -82,8 +90,7 @@
 \theoremnumbering{arabic}
 \theoremsymbol{\ensuremath{}}
 
-\shadecolor{black!15}
-\newframedtheorem{defn}{Definition}[section]
+\newtheorem{defn}{Definition}[section]
 \newtheorem{cond}{Condition}[section]
 \newtheorem{prob}{Problem}[section]
 \newtheorem{exmp}{Example}[section]
@@ -102,7 +109,7 @@
 \theoremheaderfont{\kern-1.5em\normalfont\bfseries}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{1em}
+\theorempreskip{1.5em}
 \theorempostskip{0em}
 \theoremframepreskip{0.5em}
 \theoremframepostskip{0em}
@@ -115,11 +122,11 @@
 %%%%%%%%
 % Remark
 %%%%%%%%
-\theoremstyle{changebreak}
+\theoremstyle{break}
 \theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{0.5em}
+\theorempreskip{1em}
 \theorempostskip{0em}
 \theoremframepreskip{0em}
 \theoremframepostskip{0em}
@@ -146,7 +153,7 @@
 \theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{0.5em}
+\theorempreskip{1em}
 \theorempostskip{0em}
 \theoremframepreskip{0em}
 \theoremframepostskip{0em}
@@ -163,7 +170,7 @@
 \theoremheaderfont{\kern-1.5em\itshape}
 \theorembodyfont{}
 \theoremseparator{.}
-\theorempreskip{0.5em}
+\theorempreskip{1em}
 \theorempostskip{0em}
 \theoremframepreskip{0em}
 \theoremframepostskip{0em}

@@ -2,11 +2,6 @@
 % https://ctan.org/pkg/babel
 % Usage: Establish document language.
 
-%\usepackage{darkmode}
-% https://ctan.org/pkg/darkmode
-% Usage: Render document in dark mode.
-% See Preamble/custom_settings.tex to enable.
-
 \usepackage[margin=1in,includehead,includefoot]{geometry}
 % https://ctan.org/pkg/geometry
 % Usage: Adjust margin size.
@@ -23,17 +18,17 @@
 % https://www.ctan.org/pkg/datetime2
 % Usage: Provide commands to get the current date and time.
 
-\usepackage[parfill]{parskip}
-% https://ctan.org/pkg/parskip
-% Usage: Helps with vertical spacing.
+\usepackage{siunitx}
+% https://ctan.org/pkg/siunitx
+% Usage: Writing SI units.
 
 \usepackage{mathtools, amssymb}
-% https://tex.stackexchange.com/a/32103
 % https://ctan.org/pkg/mathtools
 % https://ctan.org/pkg/amsfonts
 % Usage: Write mathematical expressions and symbols.
+% https://tex.stackexchange.com/a/32103
 
-\usepackage[framed,amsmath,thmmarks,thref,hyperref]{ntheorem}
+\usepackage[amsmath,thmmarks,thref,hyperref]{ntheorem}
 % https://ctan.org/pkg/ntheorem
 % Usage: Define and write theorem-like environments.
 % See Preamble/environments.tex for enviroment definitions.
@@ -41,15 +36,6 @@
 \usepackage[ntheorem]{empheq}
 % https://ctan.org/pkg/empheq
 % Usage: Align equations.
-
-\usepackage{framed}
-% https://ctan.org/pkg/framed
-% Usage: For \newframedtheorem in ntheorem environments.
-
-\usepackage{pstricks-add}
-% If you do something that needs pstricks, then compile in LuaLaTeX.
-% https://www.ctan.org/pkg/pstricks-base
-% Usage: For \newshadedtheorem in ntheorem environments.
 
 \usepackage[shortlabels]{enumitem}
 % https://ctan.org/pkg/enumitem
@@ -59,14 +45,6 @@
 % https://ctan.org/pkg/booktabs
 % Usage: Make tables.
 
-\usepackage{graphicx}
-% https://ctan.org/pkg/graphicx
-% Usage: Insert images.
-
-\usepackage{xcolor}
-% https://ctan.org/pkg/xcolor
-% Usage: Define colors.
-
 \usepackage{tikz}
 % https://www.ctan.org/pkg/pgf
 % Usage: Render plots.
@@ -75,13 +53,9 @@
 % https://www.ctan.org/pkg/wrapfig
 % Usage: Wrap text around figures and tables.
 
-\usepackage{multicol}
-% https://ctan.org/pkg/multicol
-% Usage: Render text in multiple columns.
-
 \usepackage{imakeidx}
 % https://ctan.org/pkg/imakeidx
-% Usage: Render an index.
+% Usage: Render the index.
 
 \usepackage{lipsum}
 % https://ctan.org/pkg/lipsum
@@ -97,4 +71,5 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Packages to consider adding:
-% siunitx
+% darkmode
+% parskip
