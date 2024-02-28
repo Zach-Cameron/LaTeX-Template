@@ -1,17 +1,17 @@
 \pagestyle{fancy}
-\setlength{\headheight}{14.5 pt}
+\setlength{\headheight}{12.1001pt}
 
 \renewcommand{\headrulewidth}{0.5 pt}
 %\renewcommand{\footrulewidth}{0.5 pt}
 
-\lhead{Title}
-\chead{Author}
+\lhead{\textit{Title}, Author}
+\chead{}
 \rhead{\rightmark}
 
 \lfoot{}
 \cfoot{}
 \rfoot{\thepage}
 
-\renewcommand{\sectionmark}[1]{\markright{#1\quad \thesection}}
-\renewcommand{\subsectionmark}[1]{\markright{#1\quad \thesubsection}}
-\renewcommand{\subsubsectionmark}[1]{\markright{#1\quad \thesubsubsection}}
+\renewcommand{\sectionmark}[1]{\markright{#1 \(\big|\) \thesection}}
+\renewcommand{\subsectionmark}[1]{\markright{#1 \(\big|\) \thesubsection}}
+\renewcommand{\subsubsectionmark}[1]{\markright{#1 \(\big|\) \thesubsubsection}}
