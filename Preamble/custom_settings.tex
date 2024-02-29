@@ -1,27 +1,50 @@
+%%%%%%%%%%%%%%%%%%
+% Package settings
+%%%%%%%%%%%%%%%%%%
+
 % graphicx: Sets default path for images.
 \graphicspath{{./Images/}}
 
 % darkmode: Enables dark mode.
 %\enabledarkmode
 
-% hyperref: Settings
+% hyperref: Settings.
 \hypersetup{
     colorlinks = true,
     linkcolor = black,
     urlcolor = blue
 }
 
+% listings: Settings.
+\lstset{
+    language = [latex]tex, 
+    frame = single,
+    backgroundcolor=\color{black!10},
+    commentstyle=\color{gray},
+    keywordstyle=\color{cyan},
+    stringstyle=\color{magenta},
+}
+
+% tikz: Libraries.
+\usetikzlibrary{quotes}
+
+% enumitem: Remove left margin of lists.
+%\setlist{leftmargin=*}
+
+% imakeidx: Keeps fancyhdr settings on Index page.
+% imakeidx: Adds the Index to the ToC.
+\indexsetup{firstpagestyle=fancy}
+\makeindex[intoc]
+
+%%%%%%%%%%%%%%%%
+% LaTeX settings
+%%%%%%%%%%%%%%%%
+
 % Draws frames around section numbers.
 % Taken from LaTeX Companion, Mittelbach & Goossens, 2nd ed, pg 26.
 \makeatletter
 \renewcommand\@seccntformat[1]{\fbox{\csname the#1\endcsname}\hspace{0.5em}}
 \makeatother
-
-% imakeidx: Keeps fancyhdr settings on Index page.
-\indexsetup{firstpagestyle=fancy}
-
-% imakeidx: Adds the Index to the ToC.
-\makeindex[intoc]
 
 % Starts section numbering at 0.
 %\setcounter{section}{-1}
@@ -32,5 +55,3 @@
 % Removes section numbering but keeps sections in the Table of Contents.
 %\setcounter{secnumdepth}{0} 
 
-% enumitem: Remove left margin of lists.
-%\setlist{leftmargin=*}
