@@ -1,8 +1,11 @@
 \pagestyle{fancy}
-\setlength{\headheight}{12.1001pt}
 
 \renewcommand{\headrulewidth}{0.5 pt}
 %\renewcommand{\footrulewidth}{0.5 pt}
+
+\renewcommand{\sectionmark}[1]{\markright{#1 \(|\) \thesection}}
+\renewcommand{\subsectionmark}[1]{\markright{#1 \(|\) \thesubsection}}
+\renewcommand{\subsubsectionmark}[1]{\markright{#1 \(|\) \thesubsubsection}}
 
 \lhead{\textit{\LaTeX\ Template}, Zach Cameron}
 \chead{}
@@ -11,7 +14,3 @@
 \lfoot{}
 \cfoot{}
 \rfoot{\thepage}
-
-\renewcommand{\sectionmark}[1]{\markright{#1 \(\big|\) \thesection}}
-\renewcommand{\subsectionmark}[1]{\markright{#1 \(\big|\) \thesubsection}}
-\renewcommand{\subsubsectionmark}[1]{\markright{#1 \(\big|\) \thesubsubsection}}
