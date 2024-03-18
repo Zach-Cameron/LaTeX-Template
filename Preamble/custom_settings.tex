@@ -3,6 +3,7 @@
 %%%%%%%%%%%%%%%%%%
 
 % graphicx: Sets default path for images.
+%%% Note: the graphicx package is internally loaded by tikz.
 \graphicspath{{./Images/}}
 
 % hyperref: Settings.
@@ -15,12 +16,13 @@
 % listings: Settings.
 \lstset{
     language = [latex]tex, 
-    frame = single,
-    literate = {--}{-{\,}-}{1},
+    basicstyle=\ttfamily\small,
     backgroundcolor=\color{black!10},
     commentstyle=\color{gray},
     keywordstyle=\color{cyan},
     stringstyle=\color{magenta},
+    frame = single,
+    literate = {--}{-{\,}-}{1},
 }
 
 % tikz: Libraries.
