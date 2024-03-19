@@ -43,30 +43,40 @@ For more information about the general structure of a \LaTeX\ document, see \hre
 
 The \texttt{Images} folder is exclusively intended to hold any image files you include in your document. Here is an example of how to include an image:
 \begin{lstlisting}
-    \begin{center}
-        \includegraphics[width=0.5\linewidth]{birch.jpg}
-    \end{center}
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{birch.jpg}
+\end{center}
 \end{lstlisting}
 This code renders the following:
 \begin{center}
     \includegraphics[width=0.5\linewidth]{birch.jpg}
 \end{center}
-The command \lstinline|\includegraphics[<options>]{<file name>}| command is provided by the \texttt{graphicx} \hyperref[sec:packages.tex]{package}
 
+The \lstinline|\includegraphics[<options>]{<file name>}| command is provided by the \texttt{graphicx} package which is internally loaded by the \texttt{tikz} package.
 
-The \hyperref[sec:custom_settings.tex]{\texttt{custom\_settings.tex}} includes the setting:
+The \hyperref[sec:custom_settings.tex]{\texttt{custom\_settings.tex}} file includes the setting:
 \begin{center}
     \lstinline|\graphicspath{{./Images/}}|
 \end{center}
+which establishes that \LaTeX\ should look for your image files in the \texttt{Images} folder by default.
 
-See \href{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}{here}.
-
+For more information on including images in your document, see \href{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}{here}.
 
 %%%%%%%%%%
 % Preamble
 %%%%%%%%%%
 \section{\texttt{Preamble}}
 \label{sec:preamble}
+
+The \texttt{Preamble} folder contains the files:
+\begin{itemize}
+    \item \hyperref[sec:packages.tex]{\texttt{packages.tex}}
+    \item \hyperref[sec:custom_settings.tex]{\texttt{custom\_settings.tex}}
+    \item \hyperref[sec:custom_commands.tex]{\texttt{custom\_commands.tex}}
+    \item \hyperref[sec:environments.tex]{\texttt{environments.tex}}
+    \item \hyperref[sec:header_footer.tex]{\texttt{header\_footer.tex}}
+\end{itemize}
+These files constitute the preamble of the document.
 
 \subsection{\texttt{packages.tex}}
 \label{sec:packages.tex}
