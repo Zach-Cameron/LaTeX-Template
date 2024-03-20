@@ -86,27 +86,31 @@ These files constitute the preamble of the document.
 
 The \texttt{packages.tex} file is exclusively intended for declaring the packages that are available for use in the document. A package provides a variety of features and functionality that might otherwise be difficult or tedious to implement from scratch.
 
-For an incomplete list of useful packages, see \href{https://en.wikibooks.org/wiki/LaTeX/Package_Reference}{here}. A complete catalog of all available packages can be found at \href{https://ctan.org/pkg}{CTAN.org}.
+For an incomplete list of useful packages, see \href{https://en.wikibooks.org/wiki/LaTeX/Package_Reference}{here}. A complete catalog of all available packages, along with their documentation, can be found at \href{https://ctan.org/pkg}{CTAN.org}.
 
 \subsection{\texttt{custom\_settings.tex}}
 \label{sec:custom_settings.tex}
 
-The \texttt{custom\_settings.tex} file is exclusively intended for declaring 
+The \texttt{custom\_settings.tex} file is exclusively intended for declaring custom settings for the document. The file is organized into two sections:
+\begin{itemize}
+    \item \texttt{Package Settings}: These are settings specific to packages that were declared in \hyperref[sec:packages.tex]{\texttt{packages.tex}}. For more information about the settings available for a package, refer to the package documentation.
+    \item \texttt{LaTeX Settings}: These are settings available in \LaTeX\ that are not specific to any package. Knowing what \LaTeX\ settings are available is a matter of research. Some resources are listed in the \hyperref[sec:resources]{Resources} section. However, since \LaTeX\ predates the World Wide Web, it is likely that your question has already been asked and answered online, for example at the \href{https://tex.stackexchange.com/}{TeX - LaTeX Stack Exchange}.
+\end{itemize} 
 
 \subsection{\texttt{custom\_commands.tex}}
 \label{sec:custom_commands.tex}
 
-The \texttt{custom\_commands.tex} file is exclusively intended for declaring 
+The \texttt{custom\_commands.tex} file is exclusively intended for declaring new or renewed commands for the document. For more information, see \href{https://en.wikibooks.org/wiki/LaTeX/Macros}{here}.
 
 \subsection{\texttt{environments.tex}}
 \label{sec:environments.tex}
 
-The \texttt{environments.tex} file is exclusively intended for declaring 
+The \texttt{environments.tex} file is exclusively intended for declaring theorem-like. definition-like and remark-like environments using the package \texttt{ntheorem}. See the \hyperref[sec:math_examples]{Math Examples} section for examples of these environments.
 
 \subsection{\texttt{header\_footer.tex}}
 \label{sec:header_footer.tex}
 
-The \texttt{header\_footer.tex} file is exclusively intended for declaring 
+The \texttt{header\_footer.tex} file is exclusively intended for declaring settings related to the header and footer of the document using the \texttt{fancyhdr} package. For more information, see \href{https://en.wikibooks.org/wiki/LaTeX/Customizing_Page_Headers_and_Footers}{here}.
 
 %%%%%%%%%%
 % Sections
@@ -114,40 +118,40 @@ The \texttt{header\_footer.tex} file is exclusively intended for declaring
 \section{\texttt{Sections}}
 \label{sec:sections}
 
-The \texttt{Sections} folder is 
+The \texttt{Sections} folder is exclusively intended for declaring 
 
 \subsection{\texttt{static}}
 \label{sec:static}
 
-The \texttt{static} folder is 
+The \texttt{static} folder is exclusively intended for declaring 
 
 \subsubsection{\texttt{table\_of\_contents.tex}}
 \label{sec:table_of_contents.tex}
 
-The \texttt{table\_of\_contents.tex} file is 
+The \texttt{table\_of\_contents.tex} file is exclusively intended for declaring 
 
 \subsubsection{\texttt{appendix.tex}}
 \label{sec:appendix.tex}
 
-The \texttt{appendix.tex} file is 
+The \texttt{appendix.tex} file is exclusively intended for declaring 
 
 \subsubsection{\texttt{appendix\_lists.tex}}
 \label{sec:appendix_lists.tex}
 
-The \texttt{appendix\_lists.tex} file is 
+The \texttt{appendix\_lists.tex} file is exclusively intended for declaring 
 
 \subsection{\texttt{abstract.tex}}
 \label{sec:abstract.tex}
 
-The \texttt{abstract.tex} file is 
+The \texttt{abstract.tex} file is exclusively intended for declaring 
 
 \subsection{\texttt{body.tex}}
 \label{sec:body.tex}
 
-The \texttt{body.tex} file is 
+The \texttt{body.tex} file is exclusively intended for declaring 
 
 \subsection{\texttt{appendix\_body.tex}}
 \label{appendix_body.tex}
 
-The \texttt{appendix\_body.tex} file is 
+The \texttt{appendix\_body.tex} file is exclusively intended for declaring 
 
