@@ -20,9 +20,9 @@ and contains the files:
 \subsection{\texttt{.gitignore}}
 \label{sec:.gitignore}
 
-The \texttt{.gitignore} file is not directly relevant to this \LaTeX\ template and can be safely ignored or removed. When compiling the \hyperref[sec:main.tex]{\texttt{main.tex}} file to produce the \hyperref[sec:main.pdf]{\texttt{main.pdf}} file, several auxiliary files are automatically generated to assist in the process. For the purpose of publishing this \LaTeX\ template to Github, it is not necessary to also publish these auxiliary files and it is preferable not to for the sake of a cleaner presentation. The \texttt{.gitignore} file is a list of files Git should ignore while tracking changes and publishing to Github.
+The \texttt{.gitignore} file is not directly relevant to this \LaTeX\ template and can be safely ignored or deleted. When compiling the \hyperref[sec:main.tex]{\texttt{main.tex}} file to produce the \hyperref[sec:main.pdf]{\texttt{main.pdf}} file, several auxiliary files are automatically generated to assist in the process. For the purpose of publishing this \LaTeX\ template to Github, it is not necessary to also publish these auxiliary files and it is preferable not to for the sake of a cleaner presentation. The \texttt{.gitignore} file is a list of files Git should ignore while tracking changes and publishing to Github.
 
-You can read more about \texttt{.gitignore} \href{https://git-scm.com/docs/gitignore}{here}. For an introduction to Git, see \href{https://git-scm.com/book/en/v2}{here}. For an introduction to Github, see \href{https://skills.github.com/}{here}.
+For more information about \texttt{.gitignore}, see \href{https://git-scm.com/docs/gitignore}{here}. For an introduction to Git, see \href{https://git-scm.com/book/en/v2}{here}. For an introduction to Github, see \href{https://skills.github.com/}{here}.
 
 \subsection{\texttt{main.pdf}}
 \label{sec:main.pdf}
@@ -34,9 +34,9 @@ You are currently reading the \texttt{main.pdf} file. This file is the end resul
 
 \lstinputlisting{main.tex}
 
-The \texttt{main.tex} file is the main \texttt{.tex} file of the document.  For more information about the general structure of a \LaTeX\ document, see \href{https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Global_structure}{here}. 
+The \texttt{main.tex} file is the main \texttt{tex} file of the document.  For more information about the general structure of a \LaTeX\ document, see \href{https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Global_structure}{here}. 
 
-The \lstinline|\input{<file.tex>}| command is used to combine the document together from separate \texttt{.tex} files for the sake of organization and readability. For more information about the \lstinline|\input| command, see \href{https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Getting_LaTeX_to_process_multiple_files}{here}.
+The \lstinline|\input{<file.tex>}| command is used to combine the document together from separate \texttt{tex} files for the sake of organization and readability. For more information about the \lstinline|\input| command, see \href{https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Getting_LaTeX_to_process_multiple_files}{here}.
 
 %%%%%%%%
 % Images
@@ -44,26 +44,7 @@ The \lstinline|\input{<file.tex>}| command is used to combine the document toget
 \section{\texttt{Images}}
 \label{sec:images}
 
-The \texttt{Images} folder is exclusively intended to hold any image files you include in your document. Here is an example of how to include an image:
-\begin{lstlisting}
-\begin{center}
-    \includegraphics[width=0.5\linewidth]{birch.jpg}
-\end{center}
-\end{lstlisting}
-This code renders the following:
-\begin{center}
-    \includegraphics[width=0.5\linewidth]{birch.jpg}
-\end{center}
-
-The \lstinline|\includegraphics[<options>]{<file name>}| command is provided by the \texttt{graphicx} package which is internally loaded by the \texttt{tikz} package.
-
-The \hyperref[sec:custom_settings.tex]{\texttt{custom\_settings.tex}} file includes the setting:
-\begin{center}
-    \lstinline|\graphicspath{{./Images/}}|
-\end{center}
-which establishes that \LaTeX\ should look for your image files in the \texttt{Images} folder by default.
-
-For more information on including images in your document, see \href{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}{here}.
+The \texttt{Images} folder is exclusively intended to hold any image files for use in your document. See the \hyperref[sec:including_images]{Including Images} section in the appendix for an example of how to include images in your document.
 
 %%%%%%%%%%
 % Preamble
@@ -84,18 +65,18 @@ These files constitute the preamble of the document.
 \subsection{\texttt{packages.tex}}
 \label{sec:packages.tex}
 
-The \texttt{packages.tex} file is exclusively intended for declaring the packages that are available for use in the document. A package provides a variety of features and functionality that might otherwise be difficult or tedious to implement from scratch.
+The \texttt{packages.tex} file is exclusively intended for declaring the packages you will use in your document. A package provides a variety of features and functionality that might otherwise be difficult or tedious to implement from scratch.
 
 For an incomplete list of useful packages, see \href{https://en.wikibooks.org/wiki/LaTeX/Package_Reference}{here}. A complete catalog of all available packages, along with their documentation, can be found at \href{https://ctan.org/pkg}{CTAN.org}.
 
 \subsection{\texttt{custom\_settings.tex}}
 \label{sec:custom_settings.tex}
 
-The \texttt{custom\_settings.tex} file is exclusively intended for declaring custom settings for the document. The file is organized into two sections:
+The \texttt{custom\_settings.tex} file is exclusively intended for declaring custom settings for your document. The file is organized into two sections:
 \begin{itemize}
     \item \texttt{Package Settings}: These are settings specific to packages that were declared in \hyperref[sec:packages.tex]{\texttt{packages.tex}}. For more information about the settings available for a package, refer to the package documentation.
     \item \texttt{LaTeX Settings}: These are settings available in \LaTeX\ that are not specific to any package. Knowing what \LaTeX\ settings are available is a matter of research. Some resources are listed in the \hyperref[sec:resources]{Resources} section. However, since \LaTeX\ predates the World Wide Web, it is likely that your question has already been asked and answered online, for example at the \href{https://tex.stackexchange.com/}{TeX - LaTeX Stack Exchange}.
-\end{itemize} 
+\end{itemize}
 
 \subsection{\texttt{custom\_commands.tex}}
 \label{sec:custom_commands.tex}
@@ -118,40 +99,113 @@ The \texttt{header\_footer.tex} file is exclusively intended for declaring setti
 \section{\texttt{Sections}}
 \label{sec:sections}
 
-The \texttt{Sections} folder is exclusively intended for declaring 
+The \texttt{Sections} folder is exclusively intended for holding the files that constitute the document body. It contains the \texttt{static} subfolder as well as the files:
+\begin{itemize}
+    \item \hyperref[sec:abstract.tex]{\texttt{abstract.tex}}
+    \item \hyperref[sec:body.tex]{\texttt{body.tex}}
+    \item \hyperref[sec:appendix_body.tex]{\texttt{appendix\_body.tex}}
+\end{itemize}
+These three files are the primary files you will be working with as you create your document.
 
 \subsection{\texttt{static}}
 \label{sec:static}
 
-The \texttt{static} folder is exclusively intended for declaring 
+The \texttt{static} folder is exclusively intended for document files that you likely will not need to edit, i.e. they should remain static.
+\begin{itemize}
+    \item \hyperref[sec:table_of_contents.tex]{\texttt{table\_of\_contents.tex}}
+    \item \hyperref[sec:appendix.tex]{\texttt{appendix.tex}}
+    \item \hyperref[sec:appendix_lists.tex]{\texttt{appendix\_lists.tex}}
+\end{itemize}
 
 \subsubsection{\texttt{table\_of\_contents.tex}}
 \label{sec:table_of_contents.tex}
 
-The \texttt{table\_of\_contents.tex} file is exclusively intended for declaring 
+\lstinputlisting{Sections/static/table_of_contents.tex}
+The \texttt{table\_of\_contents.tex} file is exclusively intended for code related to rendering the table of contents.
+\begin{itemize}
+    \item \lstinline|\pagenumbering{roman}|
+    \begin{itemize}
+        \item Set the page numbering format to roman numerals.
+    \end{itemize}
+    \item \lstinline|\hypertarget{contents}{}|
+    \begin{itemize}
+        \item Provided by the \href{https://ctan.org/pkg/hyperref}{\texttt{hyperref}} package, this establishes a hyperlink target called \textit{contents}. This target is used in the \hyperref[sec:header_footer.tex]{\texttt{header\_footer.tex}} file so that you can quickly return to the Table of Contents from any page by clicking on the current section listed on the righthand side of the header. 
+    \end{itemize}
+    \item \lstinline|\tableofcontents|
+    \begin{itemize}
+        \item The \lstinline|\tableofcontents| command tells \LaTeX\ to render the table of contents. For more information about this command, see \href{https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents}{here}.
+    \end{itemize}
+    \item \lstinline|\vfill|
+    \begin{itemize}
+        \item The \lstinline|\vfill| command fills the page with a variable amount of vertical space. This has the effect of pushing any content below \lstinline|\vfill| to the bottom of the page.
+    \end{itemize}
+    \item \lstinline|\hfill Last updated: \DTMnow|
+    \begin{itemize}
+        \item Similar to \lstinline|\vfill|, the \lstinline|\hfill| command fills the current line with a variable amount of horizontal space. The text ``Last updated: \lstinline|\DTMnow|'' is then pushed to the right of the page where the \lstinline|\DTMnow| command (provided by the \href{https://ctan.org/pkg/datetime2}{\texttt{datetime2}} package) automatically provides the current date and time at the time the document was compiled.
+    \end{itemize}
+    \item \lstinline|\newpage|
+    \begin{itemize}
+        \item The \lstinline|\newpage| command tells \LaTeX\ to stop rendering your document on the current page and continue rendering on a new page.
+    \end{itemize}
+    \item \lstinline|\pagenumbering{arabic}|
+    \begin{itemize}
+        \item Set the page numbering format to arabic numerals.
+    \end{itemize}
+    \item \lstinline|\setcounter{page}{1}|
+    \begin{itemize}
+        \item Set the page numbering counter to 1.
+    \end{itemize}
+\end{itemize}
 
 \subsubsection{\texttt{appendix.tex}}
 \label{sec:appendix.tex}
 
-The \texttt{appendix.tex} file is exclusively intended for declaring 
+\lstinputlisting{Sections/static/appendix.tex}
+The \texttt{appendix.tex} file is exclusively intended for code related to rendering the appendix.
+\begin{itemize}
+    \item \lstinline|\newpage|
+    \begin{itemize}
+        \item The \lstinline|\newpage| command tells \LaTeX\ to stop rendering your document on the current page and continue rendering on a new page.
+    \end{itemize}
+    \item \lstinline|\pagenumbering{arabic}|
+    \begin{itemize}
+        \item Set the page numbering format to arabic numerals.
+    \end{itemize}
+    \item \lstinline|\renewcommand{\thepage}{A-\arabic{page}}|
+    \begin{itemize}
+        \item Changes the text of the page number to a `A-\#' format, e.g. `A-1' is read `Appendix page number 1'. This style was copied from \href{https://www.isbns.fm/isbn/9781434843678/}{\textit{Elementary Real Analysis} by Thomson, Bruckner and Bruckner}.
+    \end{itemize}
+    \item \lstinline|\appendix|
+    \begin{itemize}
+        \item The \lstinline|\appendix| command tells \LaTeX\ to render the appendix.
+    \end{itemize}
+    \item \lstinline|\input{Sections/appendix_body.tex}|
+    \begin{itemize}
+        \item Read in the contents of the \hyperref[sec:appendix_body.tex]{\texttt{appendix\_body.tex}} file.
+    \end{itemize}
+    \item \lstinline|\input{Sections/static/appendix_lists.tex}|
+    \begin{itemize}
+        \item Read in the contents of the \hyperref[sec:appendix_lists.tex]{\texttt{appendix\_lists.tex}} file.
+    \end{itemize}
+\end{itemize}
 
 \subsubsection{\texttt{appendix\_lists.tex}}
 \label{sec:appendix_lists.tex}
 
-The \texttt{appendix\_lists.tex} file is exclusively intended for declaring 
+The \texttt{appendix\_lists.tex} file is exclusively intended for declaring which \href{https://ctan.org/pkg/ntheorem}{\texttt{ntheorem}} environments should be listed in the appendix. This file comes preconfigured to list the following: Notations, Definitions, Examples, Lemmas, Theorems and Corollaries. See the \texttt{ntheorem} documentation for more information.
 
 \subsection{\texttt{abstract.tex}}
 \label{sec:abstract.tex}
 
-The \texttt{abstract.tex} file is exclusively intended for declaring 
+The \texttt{abstract.tex} file is exclusively intended for writing the abstract of your document.
 
 \subsection{\texttt{body.tex}}
 \label{sec:body.tex}
 
-The \texttt{body.tex} file is exclusively intended for declaring 
+The \texttt{body.tex} file is exclusively intended for writing the main body of your document.
 
 \subsection{\texttt{appendix\_body.tex}}
-\label{appendix_body.tex}
+\label{sec:appendix_body.tex}
 
-The \texttt{appendix\_body.tex} file is exclusively intended for declaring 
+The \texttt{appendix\_body.tex} file is exclusively intended for writing the body of the appendix of your document.
 

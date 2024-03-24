@@ -11,11 +11,37 @@
 \section{Examples}
 \label{sec:examples}
 
+\subsection{\LaTeX\ Examples}
+\label{sec:latex_examples}
+
 \subsection{Math Examples}
 \label{sec:math_examples}
 
 \subsection{TikZ Examples}
 \label{sec:tikz_examples}
+
+\subsubsection{Including Images}
+\label{sec:including_images}
+Here is an example of how to include an image:
+\begin{lstlisting}
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{birch.jpg}
+\end{center}
+\end{lstlisting}
+This code renders the following:
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{birch.jpg}
+\end{center}
+
+The \lstinline|\includegraphics[<options>]{<file name>}| command is provided by the \texttt{graphicx} package which is internally loaded by the \texttt{tikz} package.
+
+The \hyperref[sec:custom_settings.tex]{\texttt{custom\_settings.tex}} file includes the setting:
+\begin{center}
+    \lstinline|\graphicspath{{./Images/}}|
+\end{center}
+which establishes that \LaTeX\ should look for your image files in the \texttt{Images} folder by default.
+
+For more information on including images in your document, see \href{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}{here}.
 
 %%%%%%%%%%%
 % Resources
